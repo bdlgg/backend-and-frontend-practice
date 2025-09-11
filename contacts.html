@@ -3,11 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты - Название вашего сайта</title>
+  <title>О нас - Название вашего сайта</title>
   <meta name="description" content="Узнайте больше о нашей компании и истории">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<header>
+  <a href="index.html">Логотип</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная страница</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
 
+
+<main>
+  <h1>Связи</h1>
+  <section id="services">
+    <p>Информация о доске позора БРС</p>
+    <a href="">Связь</a>
+
+  </section>
+  <section id="contacts">
+    <h2>Скоко скоко скоко</h2>
+    <p>наша связь</p>
+
+
+  </section>
+  <h1>Форма обратной связи</h1>
+  <form>
+    <form>
+      <label for="username">Ваше имя: </label>
+      <input type="text" id="username" name="name">
+
+      <label for="phone">Ваш номер телефона: </label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="email">Ваш email:</label>
+      <input type="text" id="email" name="email">
+      <label for="course">Ваш курс: </label>
+      <select id="course" name="course">
+        <option value="No"> Не выбрано</option>
+        <option value="1"> 1 курс</option>
+        <option value="2"> 2 курс</option>
+        <option value="3"> 3 курс</option>
+        <option value="4"> 4 курс</option>
+        <option value="Other"> Другое</option>
+      </select>
+      <label for="message"> ваше сообщение:</label>
+      <textarea id="message" name="message" rows="6"></textarea>
+      <button type="submit" id="submit" name="submit">Отправить</button>
+      <button type="reset" id="reset" name="reset">Отчистить</button>
+    </form>
+  </form>
+</main>
+  <footer>
+    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+  </footer>
 </body>
 </html>

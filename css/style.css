@@ -1,171 +1,39 @@
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-
-
-fieldset {
-  border: 0;
+/* сбрасываем старые стили*/
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-
-
-textarea {
-  resize: vertical;
+input,button{
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
 }
-
-
-
-.hidden,
-[hidden] {
-  display: none !important;
+/* теперь наши стили*/
+label{
+  display: block;   /* label вертикально */
+  font-weight: bold;  /* полужирный */
+  margin-bottom: 10px;  /* отступ снизу */
+  margin-top: 10px;     /* отступ сверху */
 }
-
-
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+input{
+  border: 3px solid purple;
+  border-radius: 10px;
+  padding: 5px;
 }
-
-
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+input:focus{
+  background-color: cornflowerblue;
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+button{
+  padding: 5px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+button:hover{
+  background-color: aliceblue;
+  color: cornflowerblue;
 }
-
-.clearfix::after {
-  clear: both;
-}
-@media only screen and (min-width: 35em) {
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-
-}
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
