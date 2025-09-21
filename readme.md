@@ -13,4 +13,4 @@
 тут будет описание возможностей
 
 ## ссылка на сайт
-https://bdlgg.github.io/upgraded-meme/
+https://bdlgg.github.io/syte/
