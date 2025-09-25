@@ -1,4 +1,4 @@
-/* ===== БАЗОВЫЕ СТИЛИ ===== */
+/* ===== базовые стили ===== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный
 шрифт для лучшей читаемости */
@@ -8,7 +8,7 @@ body {
 градиентный фон всей страницы */
   min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
 }
-/* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
+/* ===== контейнер страницы ===== */
 .page-container {
   max-width: 1200px; /* Максимальная ширина контента */
   margin: 0 auto; /* Центрирование контейнера по горизонтали */
@@ -16,7 +16,7 @@ body {
   min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
   box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Легкая тень вокруг всего контента */
 }
-/* ===== ШАПКА ===== */
+/* ===== шапка ===== */
 .header {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Темный
 градиентный фон */
@@ -27,7 +27,7 @@ body {
   font-weight: 300; /* Легкое начертание шрифта */
   letter-spacing: 2px; /* Расстояние между буквами */
 }
-/* ===== НАВИГАЦИЯ ===== */
+/* ===== навигация ===== */
 .nav {
   background: #2c3e50; /* Темно-синий фон навигации */
   padding: 20px 0; /* Вертикальные отступы */
@@ -56,13 +56,13 @@ body {
 */
   transform: translateY(-2px); /* Легкое поднятие элемента при наведении */
 }
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+/* ===== основной контент ===== */
 .content {
   padding: 40px; /* Внутренние отступы контента */
   max-width: 900px; /* Максимальная ширина контента */
   margin: 0 auto; /* Центрирование контента */
 }
-/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
+/* ===== главная страница ===== */
 .profile-header {
   text-align: center; /* Выравнивание по центру */
   margin-bottom: 40px; /* Отступ снизу */
@@ -103,7 +103,7 @@ body {
   font-size: 16px; /* Размер шрифта текста */
   line-height: 1.8; /* Межстрочный интервал */
 }
-/* ===== НАВЫКИ ===== */
+/* ===== навыки ===== */
 .skills-container {
   display: flex; /* Горизонтальное расположение навыков */
   justify-content: center; /* Выравнивание по центру */
@@ -127,7 +127,7 @@ body {
   box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4); /* Увеличение тени при
 наведении */
 }
-/* ===== ОПЫТ РАБОТЫ ===== */
+
 .experience-section {
   margin-top: 50px; /* Отступ сверху */
 }
@@ -161,7 +161,7 @@ body {
   line-height: 1.6; /* Межстрочный интервал */
   margin: 0; /* Убираем отступы */
 }
-/* ===== ФУТЕР ===== */
+/* ===== футер ===== */
 .footer {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Темный
 градиентный фон */
@@ -169,4 +169,111 @@ body {
   text-align: center; /* Выравнивание по центру */
   padding: 30px; /* Внутренние отступы */
   margin-top: 50px; /*Отступ сверху*/
+}
+/* =====карточка новости===== */
+.news-card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid #667eea; /* Синяя полоса слева — как в макете */
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateX(5px);
+}
+
+.news-card h2 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.news-meta {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 0 0 15px 0;
+  font-style: italic;
+}
+
+.news-text {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+/* ===== карточка товара ===== */
+.product-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid #667eea;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #27ae60;
+  font-weight: bold;
+  margin: 0;
+}
+/* ===== карточка контактов ===== */
+.contact-card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  border-left: 4px solid #667eea;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+.contact-card button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.contact-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
