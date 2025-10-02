@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/modaldialog.css">
 </head>
 <body>
 <div class="page-container">
-  <div class="header">Хэдер</div>
-  <div class="nav">
+  <header class="header">
+    <h1>Контакты</h1>
+  </header>
+  <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
       <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
@@ -17,18 +20,37 @@
       <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
       <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
     </ul>
-  </div>
-  <div class="content">
-    <div class="contact-card">
-      <p><strong>Email:</strong> <a href="mailto:example@example.com">example@example.com</a></p>
-      <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1</p>
-      <button>Позвоните мне</button>
-    </div>
-  </div>
-  <div class="footer">
+  </nav>
+  <main class="content">
+    <section class="contact-container">
+      <h2 class="section-title">Наши контакты</h2>
+      <article class="contact-card">
+        <h3 class="contact-title">Электронная почта</h3>
+        <p class="contact-text">Адрес электронной почты: <a href="mailto:example@example.com">example@example.com</a></p>
+      </article>
+      <article class="contact-card">
+        <h3 class="cotact-title">Физический адрес</h3>
+        <p class="contact-text">Адрес: г. Москва, ул. Примерная, д. 1</p>
+      </article>
+      <article class="contact-card">
+        <h3 class="contact-title">Телефон</h3>
+        <p class="contact-text">+7 (123) 456-78-90</p>
+      </article>
+      <article class="contact-card">
+        <h3 class="contact-title">Время работы</h3>
+        <p class="contact-text">Пн-Пт: 9:00-18:00</p>
+      </article>
+      <article class="contact-card">
+        <h3 class="contact-title">Социальные сети</h3>
+        <p class="contact-text">VK, Telegram, WhatsApp</p>
+      </article>
+      <button class="contact-button">Связаться со мной</button>
+    </section>
+  </main>
+  <footer class="footer">
     <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
     <p>Телефон: +7 (123) 456-78-90</p>
-  </div>
+  </footer>
 </div>
 </body>
 </html>

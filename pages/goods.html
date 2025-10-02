@@ -8,8 +8,10 @@
 </head>
 <body>
 <div class="page-container">
-  <div class="header">Хэдер</div>
-  <div class="nav">
+  <header class="header">
+    <h1>Товары</h1>
+  </header>
+  <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
       <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
@@ -17,28 +19,30 @@
       <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
       <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
     </ul>
-  </div>
-  <div class="content">
-    <div class="product-card">
-      <img src="../img/product1.png" alt="Товар 1" width="150" height="150">
-      <h3>Крутые тапки</h3>
-      <p class="product-price">Цена: 1000 рублей</p>
-    </div>
-    <div class="product-card">
-      <img src="../img/product2.png" alt="Товар 2" width="150" height="150">
-      <h3>Одеколон "Саша"</h3>
-      <p class="product-price">Цена: 400 рублей</p>
-    </div>
-    <div class="product-card">
-      <img src="../img/product3.png" alt="Товар 3" width="150" height="150">
-      <h3>Яйца "Окское"</h3>
-      <p class="product-price">Цена: 90 рублей</p>
-    </div>
-  </div>
-  <div class="footer">
+  </nav>
+  <main class="content">
+    <section class="product-grid">
+      <article class="product-card">
+        <img class="product-image" src="../img/product1.png" alt="Товар 1" width="150" height="150">
+        <h3 class="product-name">Крутые тапки</h3>
+        <p class="product-price">Цена: 1000 рублей</p>
+      </article>
+      <article class="product-card">
+        <img class="product-image" src="../img/product2.png" alt="Товар 2" width="150" height="150">
+        <h3 class="profile-name">Одеколон "Саша"</h3>
+        <p class="product-price">Цена: 400 рублей</p>
+      </article>
+      <article class="product-card">
+        <img class ="product-image" src="../img/product3.png" alt="Товар 3" width="150" height="150">
+        <h3 class="profile-name">Яйца "Окское"</h3>
+        <p class="product-price">Цена: 90 рублей</p>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
     <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
     <p>Телефон: +7 (123) 456-78-90</p>
-  </div>
+  </footer>
 </div>
 </body>
 </html>
