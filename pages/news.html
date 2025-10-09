@@ -7,41 +7,54 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="page-container">
+<div class="page">
   <header class="header">
-    <h1>Новости</h1>
+    <h1 class="header__title">Новости</h1>
   </header>
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-      <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-      <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-      <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-      <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="../index.html">Главная</a>
+      </li>
+      <li class="nav__item nav__item--active">
+        <a class="nav__link" href="news.html">Новости</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="practices.html">Практики</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="goods.html">Товары</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </li>
     </ul>
   </nav>
-  <main class="content">
-    <section class="news-conatiner">
-      <article class="news-card">
-        <h2 class="news-title">Староста - В С Ё</h2>
-        <p class="news-meta">01.01.2025 12:00 Темный принц</p>
-        <p class="news-text">Варвара Есина посреди разгара учебы улетела на другой конец мира, дабы не видеться с Алексеем Масловым</p>
-      </article>
-      <article class="news-card">
-        <h2 class="news-title">Депрессия - В С Ё</h2>
-        <p class="news-meta">02.01.2025 12:00 Мэдкид</p>
-        <p class="news-text">После получения офера от продюссерши гнусные девушки все пронюхали, и решили вернуть былую дружбу, но Яков уже не тот...</p>
-      </article>
-      <article class="news-card">
-        <h2 class="news-title">Условка - В С Ё</h2>
-        <p class="news-meta">03.01.2025 12:00 Оксимирон</p>
-        <p class="news-text">После успешной аболютной сходимости ряда, Константинов Антон вдруг обрадовался...</p>
-      </article>
+  <main class="main">
+    <section class="news">
+      <h2 class="news__title">Последние новости</h2>
+      <div class="news__list">
+        <article class="news-item">
+          <h3 class="news-item__title">Староста - В С Ё</h3>
+          <p class="news-item__date">01.01.2025 12:00 Темный принц</p>
+          <p class="news-item__text">Варвара Есина посреди разгара учебы улетела на другой конец мира, дабы не видеться с Алексеем Масловым</p>
+        </article>
+        <article class="news-item">
+          <h3 class="news-item__title">Депрессия - В С Ё</h3>
+          <p class="news-item__date">02.01.2025 12:00 Мэдкид</p>
+          <p class="news-item__text">После получения офера от продюссерши гнусные девушки все пронюхали, и решили вернуть былую дружбу, но Яков уже не тот...</p>
+        </article>
+        <article class="news-item">
+          <h3 class="news-item__title">Условка - В С Ё</h3>
+          <p class="news-item__date">03.01.2025 12:00 Оксимирон</p>
+          <p class="news-item__text">После успешной аболютной сходимости ряда, Константинов Антон вдруг обрадовался...</p>
+        </article>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
+    <p class="footer__text">&copy; 2025 Название вашего сайта. Все права защищены.</p>
+    <p class="footer__contact">Телефон: +7 (123) 456-78-90</p>
   </footer>
 </div>
 </body>

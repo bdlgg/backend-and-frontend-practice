@@ -5,53 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты</title>
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/modaldialog.css">
 </head>
 <body>
-<div class="page-container">
+<div class="page">
   <header class="header">
-    <h1>Контакты</h1>
+    <h1 class="header__title">Контакты</h1>
   </header>
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-      <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-      <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-      <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-      <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="../index.html">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="news.html">Новости</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="practices.html">Практики</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="goods.html">Товары</a>
+      </li>
+      <li class="nav__item nav__item--active">
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </li>
     </ul>
   </nav>
-  <main class="content">
-    <section class="contact-container">
-      <h2 class="section-title">Наши контакты</h2>
-      <article class="contact-card">
-        <h3 class="contact-title">Электронная почта</h3>
-        <p class="contact-text">Адрес электронной почты: <a href="mailto:example@example.com">example@example.com</a></p>
-      </article>
-      <article class="contact-card">
-        <h3 class="cotact-title">Физический адрес</h3>
-        <p class="contact-text">Адрес: г. Москва, ул. Примерная, д. 1</p>
-      </article>
-      <article class="contact-card">
-        <h3 class="contact-title">Телефон</h3>
-        <p class="contact-text">+7 (123) 456-78-90</p>
-      </article>
-      <article class="contact-card">
-        <h3 class="contact-title">Время работы</h3>
-        <p class="contact-text">Пн-Пт: 9:00-18:00</p>
-      </article>
-      <article class="contact-card">
-        <h3 class="contact-title">Социальные сети</h3>
-        <p class="contact-text">VK, Telegram, WhatsApp</p>
-      </article>
-      <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
-    </section>
-  </main>
+  <main class="main">
+    <section class="contacts">
+      <h2 class="contacts__title">Наши контакты</h2>
+      <div class="contacts__list">
+        <article class="contact-item">
+          <h3 class="contact-item__title">Электронная почта</h3>
+          <p class="contact-item__value">Адрес электронной почты: <a href="mailto:example@example.com">example@example.com</a></p>
+        </article>
+        <article class="contact-item">
+          <h3 class="contact-item__title">Физический адрес</h3>
+          <p class="contact-item__value">Адрес: г. Москва, ул. Примерная, д. 1</p>
+        </article>
+        <article class="contact-item">
+          <h3 class="contact-item__title">Телефон</h3>
+          <p class="contact-item__value">+7 (123) 456-78-90</p>
+        </article>
+        <article class="contact-item">
+          <h3 class="contact-item__title">Время работы</h3>
+          <p class="contact-item__value">Пн-Пт: 9:00-18:00</p>
+        </article>
+        <article class="contact-item">
+          <h3 class="contact-item__title">Социальные сети</h3>
+          <p class="contact-item__value">VK, Telegram, WhatsApp</p>
+        </article>
+        <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
+    <p class="footer__text">&copy; 2025 Название вашего сайта. Все права защищены.</p>
+    <p class="footer__contact">Телефон: +7 (123) 456-78-90</p>
   </footer>
   <!-- Модальное окно для формы обратной связи -->
   <dialog id="contactModal">
@@ -82,14 +91,12 @@
           <label for="category">Категория обращения <span
             class="required">*</span></label>
           <select id="category" name="category" required>
-            <option value=
-                      "">Выберите категорию</option>
+            <option value="">Выберите категорию</option>
             <option value="technical">Техническая
               поддержка</option>
             <option value="commercial">Коммерческое
               предложение</option>
-            <option
-              value="cooperation">Сотрудничество</option>
+            <option value="cooperation">Сотрудничество</option>
             <option value="complaint">Жалоба</option>
             <option value="suggestion">Предложение</option>
             <option value="other">Другое</option>
@@ -102,11 +109,7 @@
                     placeholder="Опишите вашу проблему или вопрос..."></textarea>
         </div>
         <div class="modal-actions">
-          <!-- Кнопка отмены с автоматическим закрытием через
-          form method="dialog" -->
-          <button type="submit" class="btn btn-
-secondary">Отмена</button>
-          <!-- Кнопка отправки с обработкой через JavaScript -->
+          <button type="submit" class="btn btn-secondary">Отмена</button>
           <button type="button" class="btn btn-primary"
                   onclick="submitForm()">Отправить</button>
         </div>
@@ -114,6 +117,6 @@ secondary">Отмена</button>
     </div>
   </dialog>
 </div>
-<script src="js/app.js" type="module"></script>
+<script src="../js/app.js"></script>
 </body>
 </html>

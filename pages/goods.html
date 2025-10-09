@@ -7,41 +7,54 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="page-container">
+<div class="page">
   <header class="header">
-    <h1>Товары</h1>
+    <h1 class="header__title">Товары</h1>
   </header>
   <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-      <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-      <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-      <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-      <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a class="nav__link" href="../index.html">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="news.html">Новости</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="practices.html">Практики</a>
+      </li>
+      <li class="nav__item nav__item--active">
+        <a class="nav__link" href="goods.html">Товары</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="contacts.html">Контакты</a>
+      </li>
     </ul>
   </nav>
-  <main class="content">
-    <section class="product-grid">
-      <article class="product-card">
-        <img class="product-image" src="../img/product1.png" alt="Товар 1" width="150" height="150">
-        <h3 class="product-name">Крутые тапки</h3>
-        <p class="product-price">Цена: 1000 рублей</p>
-      </article>
-      <article class="product-card">
-        <img class="product-image" src="../img/product2.png" alt="Товар 2" width="150" height="150">
-        <h3 class="profile-name">Одеколон "Саша"</h3>
-        <p class="product-price">Цена: 400 рублей</p>
-      </article>
-      <article class="product-card">
-        <img class ="product-image" src="../img/product3.png" alt="Товар 3" width="150" height="150">
-        <h3 class="profile-name">Яйца "Окское"</h3>
-        <p class="product-price">Цена: 90 рублей</p>
-      </article>
+  <main class="main">
+    <section class="products">
+      <h2 class="products__title">Наши товары</h2>
+      <div class="products__grid">
+        <article class="product-card">
+          <img class="product-card__image" src="../img/product1.png" alt="Товар 1" width="150" height="150">
+          <h3 class="product-card__name">Крутые тапки</h3>
+          <p class="product-card__price">Цена: 1000 рублей</p>
+        </article>
+        <article class="product-card">
+          <img class="product-card__image" src="../img/product2.png" alt="Товар 2" width="150" height="150">
+          <h3 class="product-card__name">Одеколон "Саша"</h3>
+          <p class="product-card__price">Цена: 400 рублей</p>
+        </article>
+        <article class="product-card">
+          <img class="product-card__image" src="../img/product3.png" alt="Товар 3" width="150" height="150">
+          <h3 class="product-card__name">Яйца "Окское"</h3>
+          <p class="product-card__price">Цена: 90 рублей</p>
+        </article>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <p>&copy; 2023 Название вашего сайта. Все права защищены.</p>
-    <p>Телефон: +7 (123) 456-78-90</p>
+    <p class="footer__text">&copy; 2025 Название вашего сайта. Все права защищены.</p>
+    <p class="footer__contact">Телефон: +7 (123) 456-78-90</p>
   </footer>
 </div>
 </body>
