@@ -294,6 +294,7 @@ body {
   border-left: 4px solid var(--color-accent);
   text-align: center;
   transition: var(--transition);
+  position: relative;
 }
 
 .product-card:hover {
@@ -588,6 +589,53 @@ dialog {
   }
 }
 
+.product-card--selected {
+  border-left: 4px solid var(--color-success);
+  background: #f8fff9;
+  position: relative;
+}
+
+.product-card--selected::before {
+  content: "Выбрано";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--color-success);
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.product-card--discount::before {
+  content: "Скидка";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--color-error);
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.product-card--discount {
+  border-left: 4px solid #e74c3c;
+  background: #f8fff8;
+}
+
+.product-card__old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 8px;
+}
+
+.product-card__discount-price {
+  color: var(--color-error);
+  font-weight: bold;
+}
 /* ==== АДАПТИВНОСТЬ ==== */
 @media (max-width: 768px) {
   .nav__list {

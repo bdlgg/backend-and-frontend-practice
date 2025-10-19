@@ -1,3 +1,4 @@
+const contactModal = document.getElementById("contact-modal");
 // Функция для отправки формы
 function submitForm() {
   const form = document.getElementById('feedbackForm');
