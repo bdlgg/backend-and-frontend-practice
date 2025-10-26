@@ -54,8 +54,7 @@
           <h3 class="contact-item__title">Социальные сети</h3>
           <p class="contact-item__value">VK, Telegram, WhatsApp</p>
         </article>
-        <button class="contact-button" onclick="contactModal.showModal()">Связаться с нами</button>
-      </div>
+        <button class="contact-button" id="openContactModal">Связаться с нами</button>      </div>
     </section>
   </main>
   <footer class="footer">
@@ -109,10 +108,8 @@
                     placeholder="Опишите вашу проблему или вопрос..."></textarea>
         </div>
         <div class="modal-actions">
-          <button type="button" class="btn btn-secondary"
-                  onclick="contactModal.close()">Отмена</button>
-          <button type="button" class="btn btn-primary"
-                  onclick="submitForm()">Отправить</button>
+          <button type="button" class="btn btn-secondary" id="cancelBtn">Отмена</button>
+          <button type="button" class="btn btn-primary" id="submitBtn">Отправить</button>
         </div>
       </form>
     </div>

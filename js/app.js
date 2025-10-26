@@ -1,16 +1,19 @@
-const contactModal = document.getElementById("contact-modal");
-// Функция для отправки формы
-function submitForm() {
-  const form = document.getElementById('feedbackForm');
-  const formData = new FormData(form);
+const contactModal = document.getElementById("contactModal");
+const form = document.getElementById('feedbackForm');
 
-  // Простая валидация
+// Открытие модального окна
+document.getElementById('openContactModal').addEventListener('click', () => {
+  contactModal.showModal();
+});
+
+// Обработчик отправки
+document.getElementById('submitBtn').addEventListener('click', function() {
   if (!form.checkValidity()) {
     form.reportValidity();
     return;
   }
 
-  // Собираем данные формы
+  const formData = new FormData(form);
   const data = {
     name: formData.get('name'),
     phone: formData.get('phone'),
@@ -19,31 +22,28 @@ function submitForm() {
     message: formData.get('message')
   };
 
-  // В реальном приложении здесь был бы AJAX-запрос
   console.log('Данные формы:', data);
+  alert('Спасибо! Ваше обращение отправлено.');
 
-  // Показываем уведомление об успешной отправке
-  alert('Спасибо! Ваше обращение отправлено. Мы свяжемся с вами в ближайшее время.');
-
-  // Закрываем модальное окно
   contactModal.close();
-
-  // Очищаем форму
   form.reset();
-}
+});
 
-// Закрытие модального окна по клику на фон
-document.getElementById('contactModal').addEventListener('click',
-  function(event) {
-    if (event.target === this) {
-      this.close();
-    }
-  });
+// Отмена
+document.getElementById('cancelBtn').addEventListener('click', () => {
+  contactModal.close();
+});
 
-// Обработка отправки формы через Enter (предотвращаем стандартное поведение)
-document.getElementById('feedbackForm').addEventListener('keypress',
-  function(event) {
-    if (event.key === 'Enter' && event.target.type !== 'textarea') {
-      event.preventDefault();
-    }
-  });
+// Закрытие по клику на фон
+contactModal.addEventListener('click', function(event) {
+  if (event.target === this) {
+    this.close();
+  }
+});
+
+// Предотвращение отправки по Enter вне textarea
+form.addEventListener('keypress', function(event) {
+  if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
+    event.preventDefault();
+  }
+});
