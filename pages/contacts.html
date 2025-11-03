@@ -115,6 +115,18 @@
     </div>
   </dialog>
 </div>
-<script src="../js/app.js"></script>
+<script src="../js/app.js">
+  setTimeout(function() {
+    const button = document.getElementById('openContactModal');
+    const modal = document.getElementById('contactModal');
+
+    if (button && modal && typeof modal.showModal !== 'function') {
+      console.log('Загружаем fallback скрипт');
+      button.onclick = function() {
+        modal.style.display = 'block';
+      };
+    }
+  }, 1000);
+</script>
 </body>
 </html>
